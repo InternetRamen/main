@@ -418,11 +418,10 @@ const Home: NextPage = () => {
                             }}
                             gutterBottom
                         >
-                            Poolesville Hacks, a 501(c)(3) non-profit
-                            organization, is opening team applications for the
+                            Poolesville Hacks is opening team applications for the
                             2022 Fall In-Person hackathon. <br />
                             <span style={{ fontWeight: 500 }}>
-                                All positions award SSL hours.
+                                All positions may award SSL hours.
                             </span>{" "}
                             <br />
                             Team members and ambassadors are NOT required to
