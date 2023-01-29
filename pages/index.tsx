@@ -60,10 +60,6 @@ const team = [
         picture: "jaden",
     },
     {
-        name: "Soham Kyada",
-        picture: "soham",
-    },
-    {
         name: "James Xu",
         picture: "james",
     },
@@ -72,16 +68,16 @@ const team = [
         picture: "abhi",
     },
     {
-        name: "Nitya Mahawar",
-        picture: "nitya",
-    },
-    {
         name: "Arjun Rao",
         picture: "arjun",
     },
     {
         name: "Bryan Yung",
         picture: "bryan",
+    },
+    {
+        name: "Nitya Mahawar",
+        picture: "nitya",
     },
 ];
 
@@ -271,13 +267,12 @@ const Home: NextPage = () => {
                         <Button
                             color="secondary"
                             variant="contained"
-                            target="_blank"
-                            href="https://docs.google.com/forms/d/e/1FAIpQLSdUw81dHxwDf3ttyfjtbHKEy5LI8TXJL1JupdFoibyKOE_NNw/viewform"
+                            href="/join"
                             sx={{ borderRadius: "10px" }}
                         >
-                            Join Us!
+                            Register
                         </Button>
-                        {/* <Button
+                        <Button
                             color="secondary"
                             variant="outlined"
                             href="/#about"
@@ -292,7 +287,7 @@ const Home: NextPage = () => {
                             }}
                         >
                             Learn More
-                        </Button> */}
+                        </Button>
                     </Box>
                 </Box>
             </Container>
@@ -385,20 +380,10 @@ const Home: NextPage = () => {
                             sx={{
                                 fontSize: "2rem",
                             }}
-                            gutterBottom
-                        >
-                            Applications Open!
-                        </Typography>
-                        {/* <Typography
-                            color="#212121"
-                            variant="h1"
-                            sx={{
-                                fontSize: "2rem",
-                            }}
                         >
                             Next Hackathon in
-                        </Typography> */}
-                        {/* <CountDown />
+                        </Typography>
+                        <CountDown />
                         <Typography
                             color="#707070"
                             variant="h3"
@@ -409,44 +394,29 @@ const Home: NextPage = () => {
                             gutterBottom
                         >
                             May 27th, 2022
-                        </Typography> */}
+                        </Typography>
                         <Typography
                             color="#212121"
                             variant="h2"
                             sx={{
-                                textAlign: "left",
+                                textAlign: "center",
                             }}
-                            gutterBottom
                         >
-                            Poolesville Hacks is opening team applications for the
-                            2022 Fall In-Person hackathon. <br />
-                            <span style={{ fontWeight: 500 }}>
-                                All positions may award SSL hours.
-                            </span>{" "}
-                            <br />
-                            Team members and ambassadors are NOT required to
-                            attend in person, but all leaders ARE. Only high
-                            school students may apply for a leadership and chair
-                            position. Only students in middle and high school
-                            during the 2023 school year are allowed to apply.
-                            You may apply for multiple positions by submitting
-                            multiple applications. <br />{" "}
-                            <span style={{ fontWeight: 500 }}>
-                                Chair position applications are due June 17th,
-                                all other applications are due July 15th.{" "}
-                            </span>
+                            poolesville_hacks 0 is completely free to register
+                            and will be held virtually. Check out our schedule
+                            for more information.
                         </Typography>
                         <Box sx={{ display: "flex", gap: "15px" }}>
                             <Button
                                 color="primary"
                                 variant="contained"
-                                href="https://docs.google.com/forms/d/e/1FAIpQLSdUw81dHxwDf3ttyfjtbHKEy5LI8TXJL1JupdFoibyKOE_NNw/viewform"
+                                href="/join"
                                 sx={{ borderRadius: "10px", color: "#F0E4A3" }}
                                 target="_blank"
                             >
-                                Join Us!
+                                Register
                             </Button>
-                            {/* <Button
+                            <Button
                                 color="primary"
                                 variant="outlined"
                                 href="/events"
@@ -461,7 +431,7 @@ const Home: NextPage = () => {
                                 }}
                             >
                                 Schedule
-                            </Button> */}
+                            </Button>
                         </Box>
                     </Box>
                 </Box>
@@ -685,7 +655,25 @@ const Home: NextPage = () => {
                             <Typography variant="h2">{val.name}</Typography>
                         </Box>
                     ))}
-
+                    <Box
+                        sx={{
+                            display: "flex",
+                            alignItems: "center",
+                            justifyContent: "flex-start",
+                            gap: "10px",
+                        }}
+                    >
+                        <Avatar
+                            alt="Soham"
+                            sx={{
+                                width: 50,
+                                height: 50,
+                            }}
+                        >
+                            S
+                        </Avatar>
+                        <Typography variant="h2">Soham Kyada</Typography>
+                    </Box>
                     <Box
                         sx={{
                             display: "flex",
